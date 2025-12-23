@@ -123,24 +123,24 @@ p1.set_initial(0.18194288048334994,0.5148059977254023)
 p2.set_initial(-0.3638857609666999,-1.0296119954508045)
 p3.set_initial(0.18194288048334994,0.5148059977254023)'''
 
-'''p1 = Planet(10, (-0.5,0))
+p1 = Planet(10, (-0.5,0))
 p2 = Planet(10, (0.5,0))
 p3 = Planet(10, (0.0207067154,0.3133550361))
 
 p1.set_initial(0, 0)
 p2.set_initial(0, 0)
-p3.set_initial(0, 0)'''
+p3.set_initial(0, 0)
 
-p1 = Planet(100, (0.716248295713,0.384288553041))
+'''p1 = Planet(100, (0.716248295713,0.384288553041))
 p2 = Planet(100, (0.086172594591,1.342795868577))
 p3 = Planet(100, (0.538777980808,0.481049882656))
 
 p1.set_initial(1.245268230896,2.444311951777)
 p2.set_initial(-0.67522432369,-0.96287961363)
-p3.set_initial(-0.570043907206,-1.481432338147)
+p3.set_initial(-0.570043907206,-1.481432338147)'''
 
 sys = System([p1, p2, p3])
-pos = sys.symplectic_evolve(dt=0.001, n_iter=10**6)
+pos = sys.symplectic_evolve(dt=0.1, n_iter=10**6)
 print(pos)
 
 vis = Visualizer(pos)
