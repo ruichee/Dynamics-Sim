@@ -7,6 +7,10 @@ from matplotlib.animation import FuncAnimation
 # -mgsinθ - cω = mrα, where r = L
 # d2θ/dt2 + dθ/dt + gsinθ/L = 0
 
+
+############################### Numerical Computation ###############################
+
+
 # ode derived from first principles
 ode = lambda theta, omega: -g*np.sin(theta)/L - c*omega
 
@@ -37,6 +41,9 @@ for i in range(n_iter):
     theta_lst.append(theta)
     omega_lst.append(omega)
     alpha_lst.append(alpha)
+
+
+############################### Graphing and Animation ###############################
 
 
 # set up figure and axis - 1 animation axis and 3 graphs for s(t) v(t) a(t)
