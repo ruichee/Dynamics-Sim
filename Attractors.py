@@ -61,6 +61,7 @@ ax = fig.add_subplot(projection='3d')
 ax.xaxis.pane.fill = False
 ax.yaxis.pane.fill = False
 ax.zaxis.pane.fill = False
+ax.set_axis_off() # optionally removing axis entirely
 
 # plot values
 ax.plot(x1_lst, y1_lst, z1_lst, lw=0.5, color="#51FFF9")
