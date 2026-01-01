@@ -118,4 +118,5 @@ k = 10
 
 # create animation, without looping (repeat=False), animation will be a little slower than real time
 animation = FuncAnimation(fig, func=update_ax, frames=n_iter//k, interval=dt*1000*k, blit=True, repeat=False)
+fig.suptitle("Pendulum Simulation")
 plt.show()
